@@ -1,0 +1,86 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height to center vertically */
+  width: 100%; /* Full width to center horizontally */
+  /* background-color: rgb(22, 50, 91); /* Light background for contrast */
+  background-image: url(https://images.unsplash.com/photo-1701642516856-c1bc14432a8c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Cover the full area */
+  padding: 20px;
+  user-select: none;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-position: center;
+  
+  
+  /*background-color: rgb(255, 255, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#outputWords {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 3px solid rgb(120, 183, 208);
+  border-radius: 12px;
+  background-color: #e9f5ffb0;
+  width: auto; /* Adjust width based on content */
+  max-width: 90%; /* Limit max width */
+  text-align: center;
+  word-wrap: break-word; /* Allow text wrapping */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.blank {
+  display: inline-block;
+  border-bottom: 2px dashed #007bff; /* Dashed underline for blanks */
+  margin: 0 5px; /* Space between blanks */
+  min-width: 50px; /* Minimum width for blanks */
+}
+
+#wordButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow buttons to wrap */
+  max-width: 500px; /* Limit max width of button area */
+}
+
+#wordButtons div {
+  flex: 1 1 80px; /* Flex-grow, flex-shrink, flex-basis */
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 123, 148, 0.671); /* Button color */
+  color: white; /* Text color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Add transform for button effect */
+  margin: 5px; /* Add margin for spacing */
+  font-weight: bold; /* Bold text for buttons */
+}
+
+#wordButtons div:hover {
+  background-color: #0057b3a8; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+span {
+  font-weight: bolder;
+  color: rgb(204, 34, 11);
+  transition: all 0.6s;
+  transition-delay: 700ms;
+}
